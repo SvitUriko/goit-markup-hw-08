@@ -1,0 +1,45 @@
+.feature__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+.feature__item {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+.feature__title {
+  margin-bottom: 10px;
+
+  @include font(null, 14px, 1.15, null);
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+.feature__text {
+  @include font(null, 14px, 1.7, null);
+}
+.thumb {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-bg-color;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}

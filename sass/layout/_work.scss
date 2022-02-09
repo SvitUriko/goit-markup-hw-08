@@ -1,0 +1,32 @@
+.work__list {
+  display: flex;
+  margin-left: -30px;
+}
+.work__item {
+  position: relative;
+
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+.label {
+  position: absolute;
+  bottom: 0;
+
+  @include flex-center;
+
+  width: 370px;
+  height: 70px;
+  background: $bg-label-color;
+}
+.work__title {
+  @include font(null, 14px, 1.15, null);
+
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.work {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}

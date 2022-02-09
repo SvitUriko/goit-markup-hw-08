@@ -1,0 +1,23 @@
+@mixin style-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  color: $white-color;
+  box-shadow: 0px 4px 4px $box-shadow-btn;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}

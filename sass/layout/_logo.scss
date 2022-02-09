@@ -1,0 +1,22 @@
+.logo {
+  font-family: $raleway;
+
+  @include font(bold, 24px, 1.16, null);
+
+  @media screen and (min-width: 1200px) {
+    @include font(bold, 26px, 1.2, null);
+  }
+}
+.logo__web {
+  color: $accent-color;
+}
+.logo__studio {
+  color: $title-text-color;
+}
+.footer-logo__studio {
+  color: $white-color;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
