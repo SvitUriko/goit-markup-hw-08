@@ -1,4 +1,10 @@
+.portfolio__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .project__meta {
+  flex-grow: 1;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
